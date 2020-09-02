@@ -1,0 +1,56 @@
+/** Recherche */
+.wpd-directory-search {
+  position: relative;
+  background: #f4f6f8;
+  border: 1px solid rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+
+  &::before {
+    font-family: dashicons;
+    display: inline-block;
+    content: "\f179";
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    color: rgba(0,0,0,0.6);
+  }
+}
+
+/** Content */
+.wpd-directory-search .wpd-content {
+  width: 100%;
+  display: block;
+  padding: 20px 20px 20px 60px;
+  transition: all 0.2s ease-out;
+  position: relative;
+  min-height: 66px;
+
+  &:hover {
+    background: rgba(0,0,0,0.1);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+/** Placeholder */
+.wpd-directory-search .wpd-placeholder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 60px;
+  color: rgba(0,0,0,0.4);
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+
+  &.active {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+  &:not(.active) {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+}

@@ -1,0 +1,10 @@
+{
+	"name": "WP Directory",
+	"slug": "wp-directory",
+	"version": "1.0.0",
+	"insert_scripts_pages": [],
+	"modules": [
+		"core/core.config.json"
+	],
+	"debug": true
+}

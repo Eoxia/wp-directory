@@ -1,0 +1,130 @@
+{
+    "key": "group_5f02eee1d7b24",
+    "title": "WPDirectory - Block",
+    "fields": [
+        {
+            "key": "field_5f02eeeb99fe4",
+            "label": "Display of directories",
+            "name": "directories_display",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "all": "Display All",
+                "categories": "Display by categories",
+                "manual": "Choose manually"
+            },
+            "allow_null": 0,
+            "default_value": "all",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5f02ef3599fe5",
+            "label": "Categories to display",
+            "name": "directories_display_taxonomies",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f02eeeb99fe4",
+                        "operator": "==",
+                        "value": "categories"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "directory_taxonomy",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5f02ef7899fe6",
+            "label": "Categories to display",
+            "name": "directories_display_manual",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f02eeeb99fe4",
+                        "operator": "==",
+                        "value": "manual"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "wp_directory"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "id"
+        },
+        {
+            "key": "field_5f032bf6fbd73",
+            "label": "Search field",
+            "name": "directories_display_search",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Field displayed",
+            "ui_off_text": "Field hidden"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/wp-directory"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1594043513
+}

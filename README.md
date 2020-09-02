@@ -1,2 +1,2 @@
 # wp-directory
-Your local telephone directory for WordPress
+A simple plugin base for WordPress plugins with Eoxia structure.

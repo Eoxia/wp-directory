@@ -1,0 +1,39 @@
+.wp-directory .wpd-contacts {
+  .wpd-contact-title {
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .wpd-contact {
+    font-size: 14px;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    .wpd-contact-name {
+      font-weight: 600;
+    }
+    .wpd-contact-info {
+      .wpd-contact-phone, .wpd-contact-email {
+        display: block;
+        color: rgba(0,0,0,0.6);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .dashicons {
+        line-height: 1.5;
+        font-size: 14px;
+      }
+    }
+  }
+}
